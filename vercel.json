@@ -7,7 +7,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/((?!assets/|favicon\\.ico|opsis-icon\\.svg|apple-touch-icon\\.png|og-.*\\.png).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
