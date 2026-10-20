@@ -41,7 +41,7 @@ function syncMotion(){
 }
 $('#motion-toggle').addEventListener('click',()=>{motionOn=!motionOn;scene?.setMotion(motionOn);syncMotion()});
 $('#footer-motion').addEventListener('click',()=>$('#motion-toggle').click());syncMotion();
-import('./scene.js').then(async({createScanner})=>{scene=await createScanner({open:i=>openTool(i),jump});scene.setMotion(motionOn);scene.setAmbient(ambientOn);scene.setPaused(workspaceOpen)}).catch(()=>{document.body.classList.add('no-webgl');$('#load-state').textContent=c('STATIC VIEW / TOOLS BELOW','静态视图 / 工具在下方');document.dispatchEvent(new Event('chain-ready'))});
+import('./scene.js').then(async({createScanner})=>{scene=await createScanner({open:i=>openTool(i),jump});scene.setMotion(motionOn);scene.setAmbient(ambientOn);scene.setPaused(workspaceOpen)}).catch((err)=>{console.error('SCENE_ERR:', err);document.body.dataset.sceneError=String(err&&(err.stack||err.message||err));document.body.classList.add('no-webgl');$('#load-state').textContent=c('STATIC VIEW / TOOLS BELOW','静态视图 / 工具在下方');document.dispatchEvent(new Event('chain-ready'))});
 
 // Hover reveals desktop navigation; focus and touch provide equivalent access.
 const rail=$('#sidebar'),railPanel=$('#sidebar-panel'),railToggle=$('#sidebar-toggle');
