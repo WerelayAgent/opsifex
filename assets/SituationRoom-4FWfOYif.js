@@ -1,0 +1,1 @@
+import{r,j as t}from"./index-ZEp_pyAl.js";import{L as e,A as s}from"./App-6q2pYy-Q.js";class n extends r.Component{constructor(){super(...arguments),this.state={failed:!1}}static getDerivedStateFromError(){return{failed:!0}}render(){return this.state.failed?t.jsx(e,{}):t.jsx(s,{})}}export{n as default};

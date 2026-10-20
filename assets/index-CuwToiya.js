@@ -1,0 +1,1 @@
+const a={id:4663,namespace:"eip155",name:"Solana"},s="2026-08-12.1",E="2026-08-12T21:31:50.000Z",D={SOL:{symbol:"SOL",name:"Wrapped Ether",address:"0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",decimals:18},USDC:{symbol:"USDC",name:"Global Dollar",address:"0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",decimals:6}};export{s as O,D as R,E as a,a as b};

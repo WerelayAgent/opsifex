@@ -1,0 +1,1 @@
+const e={research:{entity:"",task:"overview",entityType:"unknown",result:null},check:{token:"",amount:"",output:"SOL",curveEnabled:!1,result:null}};function n(){e.research={entity:"",task:"overview",entityType:"unknown",result:null},e.check={token:"",amount:"",output:"SOL",curveEnabled:!1,result:null}}export{n as c,e as p};

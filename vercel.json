@@ -1,0 +1,14 @@
+{
+  "framework": null,
+  "buildCommand": "exit 0",
+  "installCommand": "exit 0",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/((?!assets/|favicon\\.ico|opsis-icon\\.svg|apple-touch-icon\\.png|og-.*\\.png).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

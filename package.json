@@ -1,0 +1,9 @@
+{
+  "name": "opsifex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Opsifex — Public evidence, trade check, watch, and market intelligence on Solana.",
+  "scripts": {
+    "build": "echo 'No build required for static site'"
+  }
+}
