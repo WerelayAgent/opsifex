@@ -3,11 +3,11 @@
   "buildCommand": "exit 0",
   "installCommand": "exit 0",
   "outputDirectory": ".",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!assets/|opsis-site/|favicon\\.ico|apple-touch-icon\\.png|og-.*\\.png).*)",
       "destination": "/index.html"
     }
   ]
